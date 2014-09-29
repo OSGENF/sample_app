@@ -44,4 +44,5 @@ end
 group :test do
 	gem 'rspec'
 	gem 'webrat', '0.7.1'
+	gem 'spork-rails'
 end
