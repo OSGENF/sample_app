@@ -38,10 +38,10 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 group :development do
-	gem 'rspec-rails', '2.0.1'
+	gem 'rspec-rails'
 end
 
 group :test do
-	gem 'rspec', '2.0.1'
+	gem 'rspec'
 	gem 'webrat', '0.7.1'
 end
