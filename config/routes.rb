@@ -1,10 +1,23 @@
 Rails.application.routes.draw do
-  get 'pages/home'
 
-  get 'pages/contact'
+  get '/signup' , :to => 'users#new'
 
-  get 'pages/about'
+#new more efficient way of routing
+  get '/contact' , :to => 'pages#contact'
+  get '/about' , :to => 'pages#about'
+  get '/help' , :to => 'pages#help'
 
+  #instead of using get '/' , :to => 'pages#home' we can use
+  root :to => 'pages#home'
+
+#Old way of routing
+##get 'pages/home'
+#
+#  get 'pages/contact'
+#
+## get 'pages/about'
+
+#auto generated
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
